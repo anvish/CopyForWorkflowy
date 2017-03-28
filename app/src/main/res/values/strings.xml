@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Copy for WorkFlowy</string>
+    <string name="main_message">To use this app, select Share in a browser. \n\nA bullet with the page title and url will be copied, and you will be able to paste it into WorkFlowy. \n\nThe bullet will look like this:</string>
+    <string name="sample_img_description">Bullet with description</string>
+    <string name="open_wf_app_checkbox">Open WorkFlowy app after copying</string>
+    <string name="open_wf_site_checkbox">Open WorkFlowy site after copying</string>
+</resources>

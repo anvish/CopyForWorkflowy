@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg3516"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="CopyForWorkFlowyIcon.svg">
+  <defs
+     id="defs3518">
+    <clipPath
+       id="clipSilhouette">
+      <!--
+        This clip path is used to cut out any shadows and finishes outside
+        of the 152x152px (38x38dp) square keyline shape. -->
+      <rect
+         id="clipSilhouetteBounds"
+         ry="3"
+         rx="3"
+         y="5"
+         x="5"
+         height="38"
+         width="38" />
+    </clipPath>
+    <linearGradient
+       id="linearGradientWhiteMidpoint33">
+      <!--
+        Linear gradient that defines colors stops for the 33% midpoint.
+        Edit the stop-color attributes to change the color of the gradient.
+        Used for the radial gradient in the finish. -->
+      <stop
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1"
+         id="stopStart" />
+      <stop
+         offset="0.33333"
+         style="stop-color:#ffffff;stop-opacity:0.5"
+         id="stopMidpoint" />
+      <stop
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0"
+         id="stopEnd" />
+    </linearGradient>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       r="48"
+       cy="0"
+       cx="0"
+       xlink:href="#linearGradientWhiteMidpoint33"
+       id="radialGradientFinish">
+      <!--
+        The gradient used to fill the finishing layer of the icon with a
+        45º angle light. The color of the light is defined in
+        #linearGradientWhiteMidpoint33 -->
+    </radialGradient>
+    <filter
+       height="1"
+       width="1"
+       y="0"
+       x="0"
+       inkscape:label="Tint"
+       id="filterTint">
+      <!--
+        Filter used to produce the lighter edge at the top of material
+        elements.
+
+        Edit the flood-color attribute in the feFlood element below to
+        change the tint color.-->
+      <feFlood
+         id="feFlood3537"
+         result="floodTintColor"
+         flood-color="#ffffff"
+         flood-opacity="0.2" />
+      <feOffset
+         id="feOffset3539"
+         result="offsetAlpha"
+         dy="1"
+         dx="0"
+         in="SourceAlpha">
+        <!--
+          The style guideline metrics specify the y offset to be 1dp, but
+          looking at the example images, they seem to use 0.5dp or lower.
+          -->
+      </feOffset>
+      <feComposite
+         id="feComposite3541"
+         result="edgeAlpha"
+         operator="out"
+         in2="offsetAlpha"
+         in="SourceAlpha" />
+      <feComposite
+         id="feComposite3543"
+         result="edgeColor"
+         operator="in"
+         in2="edgeAlpha"
+         in="floodTintColor" />
+      <feBlend
+         id="feBlend3545"
+         result="tint"
+         mode="normal"
+         in2="SourceGraphic"
+         in="edgeColor" />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Shade"
+       id="filterShade">
+      <!--
+        Filter used to produce the darker edge at the bottom of material
+        elements.
+
+        Edit the flood-color attribute in the feFlood element below to
+        change the shade color. -->
+      <feFlood
+         id="feFlood3548"
+         result="floodShadeColor"
+         flood-opacity="0.2"
+         flood-color="#212121" />
+      <feOffset
+         id="feOffset3550"
+         result="offsetAlpha"
+         dx="0"
+         dy="-1"
+         in="SourceAlpha" />
+      <feComposite
+         id="feComposite3552"
+         result="edgeAlpha"
+         operator="out"
+         in2="offsetAlpha"
+         in="SourceAlpha" />
+      <feComposite
+         id="feComposite3554"
+         result="edgeColor"
+         operator="in"
+         in2="edgeAlpha"
+         in="floodShadeColor" />
+      <feBlend
+         id="feBlend3556"
+         result="shade"
+         mode="normal"
+         in2="SourceGraphic"
+         in="edgeColor" />
+    </filter>
+    <filter
+       y="-0.5"
+       x="-0.5"
+       height="2"
+       width="2"
+       inkscape:label="Drop Shadow"
+       id="filterShadow">
+      <!--
+        Filter used to produce the blurred shadow below material elements.
+
+        Edit the flood-color attribute in the feFlood element below to
+        change the shadow color. To edit the shadow size and offset, change
+        the attributes in the feGaussianBlur and feOffset elements. -->
+      <feFlood
+         id="feFlood3559"
+         result="floodShadowColor"
+         flood-color="#212121"
+         flood-opacity="0.2" />
+      <feComposite
+         id="feComposite3561"
+         result="shadow"
+         operator="in"
+         in2="SourceAlpha"
+         in="floodShadowColor" />
+      <feGaussianBlur
+         id="feGaussianBlur3563"
+         result="bluredShadow"
+         stdDeviation="1.5"
+         in="shadow" />
+      <feOffset
+         id="feOffset3565"
+         result="offsetShadow"
+         dy="1.5"
+         dx="0"
+         in="bluredShadow" />
+      <feComposite
+         id="feComposite3567"
+         result="dropShadow"
+         operator="over"
+         in2="offsetShadow"
+         in="SourceGraphic" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="50.847556"
+     inkscape:cy="89.32125"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1536"
+     inkscape:window-height="801"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3524" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3521">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="back"
+     style="display:none">
+    <rect
+       transform="translate(3.4272671e-6,-1.2577987e-6)"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99995327;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3665"
+       width="175.00836"
+       height="179.00835"
+       x="0.49165812"
+       y="872.86218" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.99966663;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4469"
+       width="127.00034"
+       height="179.00031"
+       x="24.499834"
+       y="872.86206" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none"
+       id="rect4467"
+       width="140"
+       height="180"
+       x="0"
+       y="872.36218" />
+    <path
+       style="display:inline;color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 48,872.36303 -24,24 0,125.99917 106,0 0,-150.00002 z"
+       id="path4562" />
+    <path
+       style="display:inline;color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 28,898.36215 22,-22 76,0 0,142.00005 -98,0 z"
+       id="path4483" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 2"
+     style="display:inline">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 70,902.36306 -24,24 0,125.99914 106,0 0,-149.99999 z"
+       id="path4566"
+       inkscape:connector-curvature="0" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 50,928.36218 22,-22 76,0 0,142.00002 -98,0 z"
+       id="path4481"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer 3">
+    <g
+       id="g4591"
+       transform="translate(-2,-6.0000219)">
+      <rect
+         ry="12"
+         rx="6"
+         y="956.36218"
+         x="78"
+         height="12.000022"
+         width="54"
+         id="rect4570"
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="9.9999866"
+         rx="9.9999847"
+         cy="962.36218"
+         cx="80.000015"
+         id="path4568"
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.99999952;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4583"
+         width="34"
+         height="12"
+         x="98"
+         y="980.36218"
+         rx="6"
+         ry="6" />
+      <ellipse
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.99999952;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse4585"
+         cx="95.999985"
+         cy="986.36218"
+         rx="9.9999847"
+         ry="9.9999866" />
+      <rect
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4587"
+         width="54"
+         height="12.000022"
+         x="78"
+         y="1004.3622"
+         rx="6"
+         ry="12" />
+      <ellipse
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.99999952;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse4589"
+         cx="80.000015"
+         cy="1010.3622"
+         rx="9.9999847"
+         ry="9.9999866" />
+    </g>
+  </g>
+</svg>
